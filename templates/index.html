@@ -1,0 +1,517 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>CarePress website</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/logoicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					
+                    <div class="right-phone-box">
+                        <p><i class="fas fa-phone-square"></i>Call US :- <a href="tel:+255-748-669-905"> +255 748 669-905 /</a><a href="tel:+255-22-2180-716"> +255 22 2180716</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            
+                            <li><a href="https://www.google.com/maps/dir//118+Jangwani+St,+Dar+es+Salaam/@-6.7936039,39.2536614,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x185c4baf68bd98d3:0xcc6be68803452c0d!2m2!1d39.2721324!2d-6.819525"><i class="fas fa-location-arrow"></i> Our location</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 30% - 50% off on printing
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 45% - 55% off on office stationeries 
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo1.png' %}" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+								<li><a href="{% url 'officesupplies' %}">Office Supplies</a></li>
+								<li><a href="{% url 'digitalprinting' %}">Digital Printing</a></li>
+                                <li><a href="{% url 'offsetprinting' %}">Offset Printing</a></li>
+                                <li><a href="{% url 'promotionalmaterials' %}">Promotional Materials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Our Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact-us' %}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+               
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start Slider -->
+    <div id="slides-shop" class="cover-slides">
+        <ul class="slides-container">
+            <li class="text-center">
+                <img src="{% static 'images/banner/7.jpg' %}" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br> CarePress Limited</strong></h1>
+                            <p class="m-b-40"> Large Format Printing<br> </p>
+                            <p><a class="btn hvr-hover" href="{% url 'digitalprinting' %}">Print Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="{% static 'images/banner/2.jpg' %}" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br> CarePress Limited</strong></h1>
+                            <p class="m-b-40"> Office Suplies<br> </p>
+                            <p><a class="btn hvr-hover" href="{% url 'officesupplies' %}">Shop Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="{% static 'images/banner/8.jpg' %}" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br> CarePress Limited</strong></h1>
+                            <p class="m-b-40">Offset Printing <br> </p>
+                            <p><a class="btn hvr-hover" href="{% url 'offsetprinting' %}">Print Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="{% static 'images/banner/6.jpg' %}" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br> CarePress Limited</strong></h1>
+                            <p class="m-b-40">Digital Printing <br> </p>
+                            <p><a class="btn hvr-hover" href="{% url 'digitalprinting' %}">Print Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="{% static 'images/banner/10.jpg' %}" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br> CarePress Limited</strong></h1>
+                            <p class="m-b-40">Promotional Materials <br> </p>
+                            <p><a class="btn hvr-hover" href="{% url 'promotionalmaterials' %}">Print Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slides-navigation">
+            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Start Categories  -->
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Our Services</h1>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/office/1.jpg' %}" alt="" />
+                        
+                        <a class="btn hvr-hover" href="{% url 'officesupplies' %}">Office Suplies</a>
+                    </div>
+                    <div class="bogi-content">
+                        <div class="tittle-bogi">
+                            <h3>At CarePress we offer you with office supplies that fullfill the demands of your industry and team.
+                                From basic office supplies upto the stylish or functional products. From DESK ORGANIZERS, DESK TRAYS,
+                                To COPY & PRINTER PAPER, NOTEBOOKS & PADS, STAPLERS & STAPLES AND MANY MORE!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/large/1.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'offsetprinting' %}">Printing</a>
+                    </div>
+                    <div class="bogi-content">
+                        <div class="tittle-bogi">
+                            <h3>At CarePress we are dedicated to deliver fast and the best print output quality.                         
+                                We offer our clients with digital printing solutions on all paper sizes and types like A3 (STICKER PAPER), 
+                                A4 (STICKER PAPER), A5 PAPER and A4 (LEDGER PAPER) Together with BUSINESS CARDS, COMPANY PROFILES, INVITATION CARDS, GREETING CARDS, 
+                                TICKETS, SEASONAL CARDS AND MANY MORE!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/offset/1.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'promotionalmaterials' %}">Promotional Materials</a>
+                    </div>
+                    <div class="bogi-content">
+                        <div class="tittle-bogi">
+                            <h3>Here at CarePress we enable you to get your company logo into the hands of customers.
+                                With the use of advanced cutting edge technology we ensure to make your brand standout.
+                                Let it be on T-SHIRTS, SHIRTS, HATS, PENS, WRITING PADS, HOME APPLIANCES, BRANDED VEHICLES AND MANY MORE!</h3>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- End Categories -->
+	
+
+
+    <!-- Start Testimonial  -->
+    <div class="latest-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Testimonials</h1>
+                        <p>Here what our clients are saying about us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Anold Msaki - CEO Stable Tanzania Limited</h3>
+                                <p>With carepress i was able to acquire high grade office supplies for my newly installed office and has since been my go to place whenever i require office supplies. They have a timely and responce delivery that will make you choose them.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img-01.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Rashid Ramadhan - CEO Moshono Promotions</h3>
+                                <p>If you are looking for promotional or priniting outputs of any sort then i would strongly recommend carepress for you. Thanks to them my customers are always enjoying the products of the highest qualitys.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img-02.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>John Murtogh - CEO WeShipAfrica Ltd</h3>
+                                <p>Working with carepress Tanzania Limited is a journey i have experienced trustworthness and state of the art services to their clients. Not only will they do the work but also provide you with excellent ideas to make your work shine.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog  -->
+
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/office1.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/office2.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/office4.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/print1.png' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/print2.png' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/print3.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/print4.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/promotional1.jpeg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/promotional2.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/promotional4.jpeg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/promotional5.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'images/footer/promotional6.jpg' %}" alt="" />
+                    <div class="hov-in">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Business Time</h3>
+							<ul class="list-time">
+								<li>Monday - Friday: 08.00am to 08.00pm</li> <li>Saturday & Sunday: 10.00am to 08.00pm</li> 
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Newsletter</h3>
+							<form class="newsletter-box">
+								<div class="form-group">
+									<input class="" type="email" name="Email" placeholder="Email Address*" />
+									<i class="fa fa-envelope"></i>
+								</div>
+								<button class="btn hvr-hover" type="submit"><a href="mailto:info@carepress.co.tz">Submit</a></button>
+                                
+							</form>
+						</div>
+					</div>
+					
+				</div>
+				<hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About CarePress</h4>
+                            <p>We are the solution to your printing tasks let it be large, medium or small. we also offer a variety of office supply materials ranging from paper clips to printers</p> 
+							<p>Here at CarePress client's satisfaction is the ultimate goal with the desire to give the best possible output that one wants. </p> 
+                            <p>Once at CarePress we want you to make us your sole option when it comes to printing and office supplies by providing you with novelty everytime you visit us.</p>							
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: Twiga / Jangwani Street <br>Plot # 118,<br> Block M </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+255 748 669 905">+255 748 669905</a></p>
+                                    <p><i class="fas fa-phone-square"></i><a href="tel:+255 786 990908">+255 786 990908</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:info@carepress.co.tz">info@carepress.co.tz</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2022 <a href="#"></a> Design By : 
+            <a href="https://www.instagram.com/golden_technologiestz/">GoldenTechnologiesTz</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/jquery.superslides.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-select.js' %}"></script>
+    <script src="{% static 'js/inewsticker.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js.' %}"></script>
+    <script src="{% static 'js/images-loded.min.js' %}"></script>
+    <script src="{% static 'js/isotope.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/baguetteBox.min.js' %}"></script>
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <script src="{% static 'js/contact-form-script.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
